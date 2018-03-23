@@ -31,11 +31,11 @@ class BossSpider(Process):
         conn = None
         conn_in = None
         try:
-            conn = MySQLdb.connect(host='139.198.189.129', user='root', passwd='somao1129', db='bosszhipin', port=20007,
+            conn = MySQLdb.connect(host='****', user='root', passwd='***', db='bosszhipin', port=20007,
                                    charset='utf8')
             cur = conn.cursor()  # 获取一个游标
 
-            conn_in = MySQLdb.connect(host='221.226.72.226', user='root', passwd='somao1129', db='bosszhipin',
+            conn_in = MySQLdb.connect(host='***', user='root', passwd='***', db='bosszhipin',
                                       port=13306, charset='utf8')
             cur_in = conn_in.cursor()  # 获取一个游标
             #  print str(datetime.datetime.now())
