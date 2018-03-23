@@ -382,7 +382,7 @@ def write_cinema_shopInfo():
 if __name__ == '__main__':
     try:
         conn_in = None
-        conn_in = MySQLdb.connect(host='221.226.72.226', user='root', passwd='somao1129', db='dianping20171225',
+        conn_in = MySQLdb.connect(host='221.226.72.226', user='root', passwd='***', db='dianping20171225',
                                   port=13306, charset='utf8')
         cur_in = conn_in.cursor()  # 获取一个游标
 
