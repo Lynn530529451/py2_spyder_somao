@@ -24,10 +24,10 @@ def get_url():
     conn = None
     conn_in = None
     try:
-        conn = MySQLdb.connect(host='139.198.189.129', user='root', passwd='****', db='bosszhipin', port=20007,charset='utf8')
+        conn = MySQLdb.connect(host='***', user='root', passwd='****', db='bosszhipin', port=***,charset='utf8')
         cur = conn.cursor()  # 获取一个游标
 
-        conn_in = MySQLdb.connect(host='221.226.72.226', user='root', passwd='***', db='bosszhipin', port=13306, charset='utf8')
+        conn_in = MySQLdb.connect(host='****', user='root', passwd='***', db='bosszhipin', port=****, charset='utf8')
         cur_in = conn_in.cursor()  # 获取一个游标
        #  print str(datetime.datetime.now())
         cur.execute('select job_url from boss_add')
@@ -105,7 +105,7 @@ def write_data():
     conn_in = None
     try:
         # 数据库连接，注意如果是UTF-8类型的，需要制定数据库(存放数据)
-        conn_in = MySQLdb.connect(host='221.226.72.226', user='root', passwd='***', db='bosszhipin', port=13306,
+        conn_in = MySQLdb.connect(host='***', user='root', passwd='***', db='bosszhipin', port=13306,
                                   charset='utf8')
         cur_in = conn_in.cursor()  # 获取一个游标
         #    #创建job_details表 (已经有表了，不要再建)
